@@ -228,20 +228,18 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
-     "ctrl",
-     "plugins",
-     "poker",
-     "version",
-     "addplug",
-     "help",
-     "getplug",
-     "groupmanager",
-     "id",
-     "tools",
-     "weather",
-     "webshot",
+    "addplug",
+    "ctrl",
+    "getplug",
+    "groupmanager",
+    "help",
+    "id",
+    "plugins",
+    "tools",
+    "version",
+    "weather"
      },
-    sudo_users = {94746365,184111248},
+    sudo_users = {1234567}, --Put Your ID Here
     admin_users = {},
     disabled_channels = {}
   }
