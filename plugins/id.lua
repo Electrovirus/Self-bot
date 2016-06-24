@@ -55,7 +55,7 @@ local function run(msg, matches)
     local receiver = get_receiver(msg)
     local chat = msg.to.id
     -- Id of the user and info about group / channel
-    if matches[1] == "#gid" then
+    if matches[1]:lower() == "gid" then
          if not is_sudo(msg) then 
             return nil
             end
@@ -66,7 +66,7 @@ local function run(msg, matches)
                 send_msg(msg.to.peer_id, 'Group ID: '..msg.to.id, ok_cb, false)
             end
         end
-elseif matches[1] == 'id' then
+elseif matches[1]:lower() == 'id' then
      if not is_sudo(msg) then 
             return nil
             end
@@ -94,9 +94,9 @@ end
 
 return {
   patterns = {
-    "^#(id)$",
-    "^#gid$",
-    "^#(id) (.*)$"
+    "^([Ii]d)$",
+    "^[Gg]id$",
+    "^([Ii]d) (.*)$"
   },
   run = run
 }
