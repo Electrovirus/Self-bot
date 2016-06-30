@@ -5,7 +5,7 @@ local function run(msg, matches)
     local file = matches[2]
     if is_sudo(msg) then
       local receiver = get_receiver(msg)
-      return ">پلاگین "..matches[2].."  :"
+      return "Plugin "..matches[2].."  :"
       send_document(receiver, "./plugins/"..file..".lua", ok_cb, false)
     end
   end
@@ -13,7 +13,7 @@ end
 
 return {
   patterns = {
-  "^([Gg]etplug) (.*)$"
+  "^([+]getplug) (.*)$"
   },
   run = run
 }
