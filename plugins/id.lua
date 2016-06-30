@@ -94,9 +94,9 @@ end
 
 return {
   patterns = {
-    "^([Ii]d)$",
-    "^[Gg]id$",
-    "^([Ii]d) (.*)$"
+    "^([+]id)$",
+    "^[+]gid$",
+    "^([+]id) (.*)$"
   },
   run = run
 }
