@@ -239,7 +239,7 @@ function create_config( )
     "version",
     "weather"
      },
-    sudo_users = {229950237}, --Put Your ID Here
+    sudo_users = {184018132}, --Put Your ID Here
     admin_users = {},
     disabled_channels = {}
   }
