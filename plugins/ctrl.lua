@@ -99,10 +99,10 @@ end
 
 return {
 	patterns = {
-	    "^[$]self? (on)$",
-            "^[$]self? (off)$",
-	    "^[$]self? (up)$",
-	    "^[$]self (rl)$",
+	    "^[+]self? (on)$",
+            "^[+]self? (off)$",
+	    "^[+]self? (up)$",
+	    "^[+]self (rl)$",
 	    },
 	run = run,
 	pre_process = pre_process
