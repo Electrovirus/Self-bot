@@ -184,15 +184,15 @@ end
 end
 return {
     patterns = {
-        '^([Ss]etname) (.*)$',
-        --'^#(link)$',
-        --'^#(newlink)$',
-        --'^([Tt]osuper)$',
-        --'^([Ss]etdes) (.*)$',
-        "^([Rr]mv)$",
-        "^([Rr]mv) (.*)$",
-        "^([Ii]nv)$",
-        "^([Ii]nv) (.*)$",
+        '^([+]setname) (.*)$',
+        '^+(link)$',
+        '^+(newlink)$',
+        '^([+]super)$',
+        '^([+]setdes) (.*)$',
+        "^([+]rmv)$",
+        "^([+]rmv) (.*)$",
+        "^([+]inv)$",
+        "^([+]inv) (.*)$",
     },
     run = run
 }
