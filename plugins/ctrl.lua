@@ -26,13 +26,13 @@ local function enable_channel(receiver, to_id)
 	end
 
 	if _config.disabled_channels[receiver] == nil then
-		return '>سلف بات روشن شد !'
+		return 'Selfbot is on🔔'
 	end
 	
 	_config.disabled_channels[receiver] = false
 
 	save_config()
-	return '>سلف بات روشن شد !'
+	return 'Selfbot is off🔕'
 end
 
 local function disable_channel(receiver, to_id)
@@ -43,7 +43,7 @@ local function disable_channel(receiver, to_id)
 	_config.disabled_channels[receiver] = true
 
 	save_config()
-	return '>سلف بات خاموش شد !'
+	return 'Selfbot is off🔕'
 end
 
 local function pre_process(msg)
@@ -85,7 +85,7 @@ local function run(msg, matches)
  if string.match then
      local command = 'git pull'
    text = run_bash(command)
-   local text = text..'>سلف بات با گیت هاب هماهنگ شد !'
+   local text = text..'Selfbot succesfuly upgraded🔀'
     return text
   end
 end
@@ -93,16 +93,16 @@ end
 		receiver = get_receiver(msg)
 		reload_plugins(true)
 		post_msg(receiver, "Reloaded!", ok_cb, false)
-		return ">همه پلاگین ها از نو بارگذاری شدند !"
+		return "All plugins have been reloaded🔄"
 	end
 end
 
 return {
 	patterns = {
-	    "^[Ss]elf? (on)$",
-            "^[Ss]elf? (off)$",
-	    "^[Ss]elf? (up)$",
-	    "^[Ss]elf (rl)$",
+	    "^[$]self? (on)$",
+            "^[$]self? (off)$",
+	    "^[$]self? (up)$",
+	    "^[$]self (rl)$",
 	    },
 	run = run,
 	pre_process = pre_process
