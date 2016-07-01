@@ -19,11 +19,6 @@
 # It should be able to recover the telegram bot in any case telegram-cli crashes, freezes or whatever.
 # This script works by tracing ctxt swithes value in kernel procces at a $RELOADTIME 
 # So it can detect any kind of kernel interruption with the procces and reload the bot.
-# ____             _   ____        _  _____                    
-#| __ )  ___  __ _| |_| __ )  ___ | ||_   _|__  __ _ _ __ ___  
-#|  _ \ / _ \/ _` | __|  _ \ / _ \| __|| |/ _ \/ _` | '_ ` _ \ 
-#| |_) |  __/ (_| | |_| |_) | (_) | |_ | |  __/ (_| | | | | | |
-#|____/ \___|\__,_|\__|____/ \___/ \__||_|\___|\__,_|_| |_| |_|
 
 
 # Some script variables
@@ -34,8 +29,8 @@ NONVOLUNTARYCHECK=0
 VOLUNTARY=1
 VOLUNTARYCHECK=0
 I=1
-BOT=DBTeam  # You can put here other bots. Also you can change it to run more than one bot in the same server.
-RELOADTIME=10  # Time between checking cpu calls of the cli process. Set the value high if your bot does not receive lots of messages.
+BOT=self-bot,Griffin  # You can put here other bots. Also you can change it to run more than one bot in the same server.
+RELOADTIME=2  # Time between checking cpu calls of the cli process. Set the value high if your bot does not receive lots of messages.
 
 
 function tmux_mode {
