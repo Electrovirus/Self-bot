@@ -231,16 +231,15 @@ function create_config( )
     "addplug",
     "ctrl",
     "getplug",
-    "groupmanager",
+    "time",
     "help",
     "id",
     "plugins",
-    "tools",
     "version",
     "weather"
      },
     sudo_users = {184018132}, --Put Your ID Here
-    admin_users = {},
+    admin_users = {}, --Don't give everybody admin prom
     disabled_channels = {}
   }
   serialize_to_file(config, './data/config.lua')
