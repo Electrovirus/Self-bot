@@ -170,7 +170,7 @@ local function run(msg, matches)
       return reload_plugins(true)
     end
   else
-    return '🚫 '..lang_text(msg.to.id, 'require_sudo')
+    return '💀 '..lang_text(msg.to.id, 'require_sudo')
   end
 end
 
