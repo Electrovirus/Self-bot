@@ -112,6 +112,6 @@ else
     exit 1
   fi
   
-  rm -rf $HOME/.telegram-cli/state
+  rm -r ../.telegram-cli/state
   ./tg/bin/telegram-cli -k ./tg/tg-server.pub -s ./bot/bot.lua -l 1 -E $@
 fi
