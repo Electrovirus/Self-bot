@@ -24,7 +24,7 @@ local function plugin_exists( name )
 end
 
 local function list_plugins(only_enabled)
-  local text = 'ℹ️ '..lang_text(to_id, 'plugins')..':\n'
+  local text = 'ℹ️'..lang_text(to_id, 'plugins')..':\n'
   local psum = 0
   for k, v in pairs( plugins_names( )) do
     --  ▪️ enabled, ▫️ disabled
